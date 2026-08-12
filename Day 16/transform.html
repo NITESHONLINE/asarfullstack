@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+        }
+        
+        .minibox{
+            height: 300px;
+            width: 300px;
+            background-color: lightcoral;
+            transition: all 2s;
+            /* border-radius: 50%; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: spinImage 2s linear infinite;
+        
+        }   
+        /* .minibox:hover{
+            transform: rotate(45deg);
+        } */
+
+
+        @keyframes spinImage { 
+            to{
+                /* transform: rotate(360deg); */
+                /* transform: rotateX(360deg); */
+                /* transform: rotateY(360deg); */
+              
+                /* transform: scale(2); */
+                /* transform: scaleX(2); */
+                /* transform: scaleY(2); */
+
+
+                /* transform: skew(45deg); */
+                /* transform: skewX(45deg); */
+                /* transform: skewY(45deg); */
+
+                /* transform: translate(300px, 300px); */
+                /* transform: translateX(300px); */
+                /* transform: translateY(300px); */ 
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="minibox">Transform</div>
+    </div>
+</body>
+</html>

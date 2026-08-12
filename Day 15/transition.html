@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: white;
+
+            /* transition: all linear 2s; */
+            /* transition-property: height; */
+            transition-property: all;
+            transition-duration:2s;
+            /* transition-delay: 2s; */
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: ease-in-out; */
+            transition-timing-function: cubic-bezier(0.86, 0.06, 0, 0.99);
+            border-radius: 50%;
+            box-shadow: 0px 0px 44px 20px yellow;
+            margin: auto;
+        }
+        .box:hover{
+            box-shadow: 0px 0px 44px 20px gray;
+        }
+
+        img{
+            /* animation: ; */
+            animation-name: moveBuddha;
+            animation-duration: 2s;
+            /* animation-iteration-count: 2; */
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            width: 100px;
+        }
+
+        /* @keyframes moveBuddha {
+            from{
+                background-color: green;
+            }to{
+                margin-top: 20px;
+            }
+        } */
+        @keyframes moveBuddha {
+            0%{
+                background-color: green;
+            }100%{
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body> 
+    <div class="box"></div> 
+
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/250px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="buddha">
+
+</body>
+</html>
